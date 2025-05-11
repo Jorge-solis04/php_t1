@@ -3,7 +3,7 @@ function conectar()
 {
     $host = "localhost:8889";
     $user = "root";
-    $pass = "root"; 
+    $pass = "root";     
     $bd = "proyecto_php_t1";
     
 

@@ -25,10 +25,10 @@
         <div class="row">
             <div class="col-md-3">
                 <h1>Ingresa los datos del alumno</h1>
-                <form action="insertar.php" method="post">
-                    <input type="text" name="ine" class="form-control mb-3" placeholder="Escribe tu INE">
-                    <input type="text" name="nombre" class="form-control mb-3" placeholder="Escribe tu nombre">
-                    <input type="text" name="apellidos" class="form-control mb-3" placeholder="Escribe tus apellidos">
+                <form action="insert.php" method="post">
+                    <input type="text" name='ine' class="form-control mb-3" placeholder="Escribe tu INE">
+                    <input type="text" name='nombre' class="form-control mb-3" placeholder="Escribe tu nombre">
+                    <input type="text" name='apellidos' class="form-control mb-3" placeholder="Escribe tus apellidos">
                     <input type="submit" value="Insertar" class="btn btn-primary">
                 </form>
             </div>
@@ -61,7 +61,7 @@
                                     <?php echo $row["apellidos"] ?>
                                 </td>
                                 <td>
-                                    <a href="actualizar.php?id=<?php echo $row["cod_estudiante"]?>" class="btn btn-warning">EDITAR</a>
+                                    <a href="insert.php?id=<?php echo $row["cod_estudiante"]?>" class="btn btn-warning">EDITAR</a>
                                     |
                                     <a href="delete.php?id=<?php echo $row["cod_estudiante"]?>" class="btn btn-danger">BORRAR</a>
 
